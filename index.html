@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="images/HV.png">
+    <title>Hidden Vegetables</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.typekit.net/lrh2off.css">
+    <link href="styles.css" rel="stylesheet">
+
+  </head>
+<body>
+  <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <img src="images/HV.png" alt="The letters H and V made of colorful blocks">
+        <h1>Hidden Vegetables</h1>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="drop-btn">Select a skill  &#9660;</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="filterSelection('all')">Show all</a>
+          <a href="#" onclick="filterSelection('Critical Thinking')">Critical Thinking</a>
+          <a href="#" onclick="filterSelection('Decision-Making')">Decision Making</a>
+          <a href="#" onclick="filterSelection('Deduction')">Deduction</a>
+          <a href="#" onclick="filterSelection('Economics')">Economics</a>
+          <a href="#" onclick="filterSelection('Math')">Math</a>
+          <a href="#" onclick="filterSelection('Motor-Skills')">Motor Skills</a>
+          <a href="#" onclick="filterSelection('Negotiation')">Negotiation</a>
+          <a href="#" onclick="filterSelection('Perspective')">Perspective</a>
+          <a href="#" onclick="filterSelection('Probability')">Probability</a>
+          <a href="#" onclick="filterSelection('Problem-Solving')">Problem-Solving</a>
+          <a href="#" onclick="filterSelection('Strategy')">Strategy</a>
+        </div>
+      </div>
+      <input type="text" id="searchBar" placeholder="Search for a game..">
+    </div>
+  </nav>
+
+  <p class="explanation">The games your child may already love to play can actually help them develop important skills, often without them even realizing it! Just like hiding vegetables in their favorite meal to make it healthy while still enjoyable, Hidden Vegetables shows you about all of the learning that is hidden in games kids already enjoy. Click through the games below to discover the skills your child can build while having fun.</p>
+
+  <div id="filterButtons">
+    <button type="button" class="btn active" onclick="filterSelection('all')">Show all</button>
+    <button type="button" class="btn" onclick="filterSelection('Critical-Thinking')">Critical Thinking</button>
+    <button type="button" class="btn" onclick="filterSelection('Decision-Making')">Decision Making</button>
+    <button type="button" class="btn" onclick="filterSelection('Deduction')">Deduction</button>
+    <button type="button" class="btn" onclick="filterSelection('Economics')">Economics</button>
+    <button type="button" class="btn" onclick="filterSelection('Math')">Math</button>
+    <button type="button" class="btn" onclick="filterSelection('Motor-Skills')">Motor Skills</button>
+    <button type="button" class="btn" onclick="filterSelection('Negotiation')">Negotiation</button>
+    <button type="button" class="btn" onclick="filterSelection('Perspective')">Perspective</button>
+    <button type="button" class="btn" onclick="filterSelection('Probability')">Probability</button>
+    <button type="button" class="btn" onclick="filterSelection('Problem-Solving')">Problem-Solving</button>
+    <button type="button" class="btn" onclick="filterSelection('Strategy')">Strategy</button>
+  </div>
+
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#">Chess</a></li>
+        <li><a href="#">Dungeons &amp; Dragons</a></li>
+        <li><a href="#">Hide &amp; Seek</a></li>
+        <li><a href="#">Mafia</a></li>
+        <li><a href="#">Minecraft</a></li>
+        <li><a href="#">Monopoly</a></li>
+        <li><a href="#">Settlers of Catan</a></li>
+        <li><a href="#">The Sims</a></li>
+        <li><a href="#">Tag</a></li>
+        <li><a href="#">Werewolf</a></li>
+      </ul>
+    </aside>
+
+    <main class="game-grid">
+      <div class="game Math Economics show">
+        <div class="game-image">
+          <img src="images/Monopoly.png" alt="Monopoly Icon">
+        </div>
+        <strong>Monopoly</strong>
+        <p>A board game where players buy, trade, and develop properties to accumulate wealth and bankrupt opponents.</p>
+        <div class="extra-content">
+          <p>Players practice arithmetic, budgeting, and negotiation by managing money, making deals, and planning investments strategically.</p>
+        </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Math</p>
+          <p class="skill-tag">Economics</p>
+        </div>
+      </div>
+
+      <div class="game Negotiation Probability show">
+        <div class="game-image">
+          <img src="images/Catan.webp" alt="Settlers of Catan Icon">
+        </div>
+        <strong>Settlers of Catan</strong>
+        <p>A board game where players gather and trade resources to build settlements and roads while competing for dominance.</p>
+          <div class="extra-content">
+    <p>Numbers on resource plots teach probability and chance, while managing scarce resources encourages strategic planning and negotiation.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Negotiation</p>
+          <p class="skill-tag">Probability</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Strategy Motor-Skills show">
+        <div class="game-image">
+          <img src="images/Tag.png" alt="Tag Icon">
+        </div>
+        <strong>Tag</strong>
+        <p>A chasing game where one player tries to tag others, who must dodge and run to stay safe.</p>
+          <div class="extra-content">
+    <p>Players develop spatial awareness, anticipation, and split-second decision-making as they move, react, and plan routes.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Strategy</p>
+          <p class="skill-tag">Motor Skills</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Perspective Motor-Skills show">
+        <div class="game-image">
+          <img src="images/Hide.png" alt="Hide & Seek Icon">
+        </div>
+        <strong>Hide &amp; Seek</strong>
+        <p>One player searches while others hide, using the environment to remain unseen.</p>
+          <div class="extra-content">
+    <p>Players build observation, prediction, and spatial memory by imagining others' viewpoints and reasoning about likely hiding spots.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Perspective</p>
+          <p class="skill-tag">Motor Skills</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Problem-Solving Probability show">
+        <div class="game-image">
+          <img src="images/DnD.png" alt="Dungeons & Dragons Icon">
+        </div>
+        <strong>Dungeons &amp; Dragons</strong>
+        <p>A tabletop role-playing game where players create characters and work together to overcome challenges in a shared fantasy story.</p>
+          <div class="extra-content">
+    <p>Players use probability and teamwork to make tactical decisions, solve problems, and coordinate group strategies.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Problem-Solving</p>
+          <p class="skill-tag">Probability</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Strategy show">
+        <div class="game-image">
+          <img src="images/Chess.png" alt="Chess Icon">
+        </div>
+        <strong>Chess</strong>
+        <p>A two-player strategy game where each side maneuvers pieces to checkmate the opponent's king.</p>
+          <div class="extra-content">
+    <p>Players strengthen pattern recognition, foresight, and strategic reasoning by predicting moves and planning several turns ahead.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Strategy</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Deduction Critical-Thinking show">
+        <div class="game-image">
+          <img src="images/Mafia.svg" alt="Mafia Icon">
+        </div>
+        <strong>Mafia</strong>
+        <p>A multiplayer game where players are assigned secret roles and must work together or against each other to achieve their objectives, using discussion, deception, and deduction.</p>
+          <div class="extra-content">
+    <p>Players enhance general cognitive skills such as reasoning, problem-solving, decision-making, and communication by evaluating information, interpreting behavior, and making strategic choices under uncertainty.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Critical Thinking</p>
+          <p class="skill-tag">Deduction</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+      <div class="game Resource-Management show">
+        <div class="game-image">
+          <img src="images/Minecraft.png" alt="Minecraft Icon">
+        </div>
+        <strong>Minecraft</strong>
+        <p>A sandbox video game where players build, explore, and survive using block-based materials in a 3D world.</p>
+          <div class="extra-content">
+    <p>Constructing structures fosters spatial reasoning and geometry skills, while collecting and crafting teach efficiency and resource prioritization.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Resource Management</p>
+        </div>
+        <div class="overlay">
+</div>
+
+      </div>
+
+      <div class="game Decision-Making show">
+        <div class="game-image">
+          <img src="images/Sims.png" alt="The Sims Icon">
+        </div>
+        <strong>The Sims</strong>
+        <p>A life simulation game where players design homes, manage characters' lives, and balance their needs and ambitions.</p>
+          <div class="extra-content">
+    <p>Players practice budgeting, planning, and understanding cause-and-effect through managing relationships, time, and resources.</p>
+  </div>
+      <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Decision Making</p>
+        </div>
+        <div class="overlay">
+    <div class="extra-content">
+    <p>In Monopoly, players also learn about budgeting, planning ahead, and adapting strategy when circumstances change — valuable lessons in resource management.</p>
+  </div>
+
+  </div>
+
+      </div>
+    </main>
+  </div>
+
+
+  <script>
+    filterSelection("all");
+    function filterSelection(c) {
+      let x = document.getElementsByClassName("game");
+      if (c === "all") c = "";
+      for (let i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      let arr1 = element.className.split(" ");
+      let arr2 = name.split(" ");
+      for (let i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) === -1) element.className += " " + arr2[i];
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      let arr1 = element.className.split(" ");
+      let arr2 = name.split(" ");
+      for (let i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+      element.className = arr1.join(" ");
+    }
+
+    let btnContainer = document.getElementById("filterButtons");
+    let btns = btnContainer.getElementsByClassName("btn");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("active");
+        if (current.length > 0)
+          current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+    function toggleExtra(button) {
+  const content = button.previousElementSibling; 
+  content.classList.toggle("open");
+
+  if (content.classList.contains("open")) {
+    button.textContent = "Show less";
+  } else {
+    button.textContent = "Learn more";
+  }
+}
+const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('keyup', function () {
+  const searchValue = this.value.toLowerCase().trim();
+  const games = document.querySelectorAll('.game');
+
+  games.forEach(game => {
+    const title = game.querySelector('strong').textContent.toLowerCase();
+    const tags = Array.from(game.querySelectorAll('.skill-tag')).map(tag => tag.textContent.toLowerCase());
+    const description = game.querySelector('p').textContent.toLowerCase();
+
+    if (
+      title.includes(searchValue) ||
+      tags.some(tag => tag.includes(searchValue)) ||
+      description.includes(searchValue)
+    ) {
+      game.classList.add('show');
+    } else {
+      game.classList.remove('show');
+    }
+  });
+});
+
+
+  </script>
+  <!-- <footer>
+    <p>footer content</p>
+  </footer> -->
+</body>
+</html>
