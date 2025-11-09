@@ -255,6 +255,7 @@ p.skill-tag{
 
 .tags{
     display: flex;
+    justify-content: center;
 }
 
 .show {
