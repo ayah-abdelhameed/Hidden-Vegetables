@@ -318,11 +318,6 @@ p.skill-tag{
   color: white;
 }
 
-#filterButtons {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .learn-more-btn {
   background-color: rgb(240, 240, 240);
   color: #5460A4;
@@ -358,6 +353,31 @@ p.skill-tag{
   padding: 1rem;
 }
 
-/* footer{
-  background-color: #5460A4;
-} */
+#filterButtons {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.horizontal-scroll{
+  width: 80%; 
+  position: relative;
+  margin: 0 auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0;
+
+ -webkit-mask-image: linear-gradient(
+    to right,
+    black 85%, 
+    transparent 100%  
+  );
+  mask-image: linear-gradient(
+    to right,
+    black 85%,
+    transparent 100%
+  );
+}
+
+#filterButtons > * {
+  display: inline-block;
+}
