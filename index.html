@@ -19,16 +19,21 @@
         <button type="button" class="drop-btn">Select a skill  &#9660;</button>
         <div class="dropdown-content">
           <a href="#" onclick="filterSelection('all')">Show all</a>
+          <a href="#" onclick="filterSelection('Communication')">Communication</a>
           <a href="#" onclick="filterSelection('Critical Thinking')">Critical Thinking</a>
           <a href="#" onclick="filterSelection('Decision-Making')">Decision Making</a>
           <a href="#" onclick="filterSelection('Deduction')">Deduction</a>
+          <a href="#" onclick="filterSelection('Coordination')">Coordination</a>
           <a href="#" onclick="filterSelection('Economics')">Economics</a>
+          <a href="#" onclick="filterSelection('History')">History</a>
+          <a href="#" onclick="filterSelection('Long-term-Planning')">Long-term Planning</a>
+          <a href="#" onclick="filterSelection('Management')">Management</a>
           <a href="#" onclick="filterSelection('Math')">Math</a>
-          <a href="#" onclick="filterSelection('Motor-Skills')">Motor Skills</a>
           <a href="#" onclick="filterSelection('Negotiation')">Negotiation</a>
           <a href="#" onclick="filterSelection('Perspective')">Perspective</a>
           <a href="#" onclick="filterSelection('Probability')">Probability</a>
           <a href="#" onclick="filterSelection('Problem-Solving')">Problem-Solving</a>
+          <a href="#" onclick="filterSelection('Rhythm')">Rhythm</a>
           <a href="#" onclick="filterSelection('Strategy')">Strategy</a>
         </div>
       </div>
@@ -49,14 +54,17 @@
       <button type="button" class="btn" onclick="filterSelection('Creativity')">Creativity</button>
       <button type="button" class="btn" onclick="filterSelection('Decision-Making')">Decision Making</button>
       <button type="button" class="btn" onclick="filterSelection('Deduction')">Deduction</button>
+      <button type="button" class="btn" onclick="filterSelection('Coordination')">Coordination</button>
       <button type="button" class="btn" onclick="filterSelection('Economics')">Economics</button>
-      <button type="button" class="btn" onclick="filterSelection('Math')">Math</button>
+      <button type="button" class="btn" onclick="filterSelection('History')">History</button>
+      <button type="button" class="btn" onclick="filterSelection('Long-term-Planning')">Long-term Planning</button>
       <button type="button" class="btn" onclick="filterSelection('Management')">Management</button>
-      <button type="button" class="btn" onclick="filterSelection('Motor-Skills')">Motor Skills</button>
+      <button type="button" class="btn" onclick="filterSelection('Math')">Math</button>
       <button type="button" class="btn" onclick="filterSelection('Negotiation')">Negotiation</button>
       <button type="button" class="btn" onclick="filterSelection('Perspective')">Perspective</button>
       <button type="button" class="btn" onclick="filterSelection('Probability')">Probability</button>
       <button type="button" class="btn" onclick="filterSelection('Problem-Solving')">Problem-Solving</button>
+      <button type="button" class="btn" onclick="filterSelection('Rhythm')">Rhythm</button>
       <button type="button" class="btn" onclick="filterSelection('Strategy')">Strategy</button>
     </div>
   </div>
@@ -65,9 +73,14 @@
     <aside class="sidebar">
       <h2>Contents</h2>
       <ul>
-        <li><a href="#">Animal Crossing</a></li>
         <li><a href="#">Among Us</a></li>
+        <li><a href="#">Animal Crossing</a></li>
+        <li><a href="#">Apples to Apples</a></li>
+        <li><a href="#">Assassin's Creed</a></li>
+        <li><a href="#">Beat Saber</a></li>
+        <li><a href="#">Call of Duty: WWII </a></li>
         <li><a href="#">Chess</a></li>
+        <li><a href="#">Civilization VI</a></li>
         <li><a href="#">Dungeons &amp; Dragons</a></li>
         <li><a href="#">Hide &amp; Seek</a></li>
         <li><a href="#">Mafia</a></li>
@@ -80,6 +93,7 @@
     </aside>
 
     <main class="game-grid">
+      <!-- Monopoly -->
       <div class="game Math Economics show">
         <div class="game-image">
           <img src="images/Monopoly.png" alt="Monopoly Icon">
@@ -98,6 +112,7 @@
         </div>
       </div>
 
+      <!-- Catan -->
       <div class="game Negotiation Probability show">
         <div class="game-image">
           <img src="images/Catan.webp" alt="Settlers of Catan Icon">
@@ -114,12 +129,11 @@
           <p class="skill-tag">Negotiation</p>
           <p class="skill-tag">Probability</p>
         </div>
-        <div class="overlay">
-</div>
 
       </div>
 
-      <div class="game Strategy Motor-Skills show">
+      <!-- Tag -->
+      <div class="game Strategy Coordination show">
         <div class="game-image">
           <img src="images/Tag.png" alt="Tag Icon">
         </div>
@@ -133,14 +147,14 @@
 
         <div class="tags">
           <p class="skill-tag">Strategy</p>
-          <p class="skill-tag">Motor Skills</p>
+          <p class="skill-tag">Coordination</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
-      <div class="game Perspective Motor-Skills show">
+      <!-- Hide n Seek -->
+      <div class="game Perspective Coordination show">
         <div class="game-image">
           <img src="images/Hide.png" alt="Hide & Seek Icon">
         </div>
@@ -154,13 +168,13 @@
 
         <div class="tags">
           <p class="skill-tag">Perspective</p>
-          <p class="skill-tag">Motor Skills</p>
+          <p class="skill-tag">Coordination</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
+      <!-- DnD -->
       <div class="game Problem-Solving Creativity Probability show">
         <div class="game-image">
           <img src="images/DnD.png" alt="Dungeons & Dragons Icon">
@@ -177,11 +191,11 @@
           <p class="skill-tag">Problem-Solving</p>
           <p class="skill-tag">Probability</p>
         </div>
-        <div class="overlay">
-          </div>
-  </div>
 
-      <div class="game Management show">
+      </div>
+
+      <!-- Animal Crossing -->
+      <div class="game Management Long-term Planning show">
         <div class="game-image">
           <img src="images/Animal-Crossing.png" alt="Animal Crossing Icon">
         </div>
@@ -195,13 +209,14 @@
 
         <div class="tags">
           <p class="skill-tag">Management</p>
+          <p class="skill-tag">Long-term Planning</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
-      <div class="game Strategy show">
+      <!-- Chess -->
+      <div class="game Strategy Long-term Planning show">
         <div class="game-image">
           <img src="images/Chess.png" alt="Chess Icon">
         </div>
@@ -215,12 +230,13 @@
 
         <div class="tags">
           <p class="skill-tag">Strategy</p>
+          <p class="skill-tag">Long-term Planning</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
+      <!-- Mafia -->
       <div class="game Deduction Creativity Critical-Thinking show">
         <div class="game-image">
           <img src="images/Mafia.svg" alt="Mafia Icon">
@@ -237,11 +253,11 @@
           <p class="skill-tag">Critical Thinking</p>
           <p class="skill-tag">Deduction</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
+      <!-- Minecraft -->
       <div class="game Management show">
         <div class="game-image">
           <img src="images/Minecraft.png" alt="Minecraft Icon">
@@ -258,11 +274,11 @@
           <p class="skill-tag">Management</p>
           <p class="skill-tag">Creativity</p>
         </div>
-        <div class="overlay">
-</div>
+
 
       </div>
 
+      <!-- The sims -->
       <div class="game Decision-Making show">
         <div class="game-image">
           <img src="images/Sims.png" alt="The Sims Icon">
@@ -277,37 +293,141 @@
         <div class="tags">
           <p class="skill-tag">Decision Making</p>
         </div>
-        <div class="overlay">
-    <div class="extra-content">
-    <p>In Monopoly, players also learn about budgeting, planning ahead, and adapting strategy when circumstances change — valuable lessons in resource management.</p>
-  </div>
-
-  </div>
 
       </div>
-      <div class="game Logic Communication show">
+
+      <!-- Among Us -->
+      <div class="game Logic Communication Deduction">
         <div class="game-image">
           <img src="images/Among-Us.png" alt="Among Us Logo">
         </div>
         <strong>Among Us</strong>
         <p>A multiplayer social deduction game where crewmates must identify the hidden impostor.</p>
           <div class="extra-content">
-    <p>Builds reasoning, communication, suspicion analysis, and reading subtle behavior cues.</p>
-  </div>
-      <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+            <p>Builds reasoning, communication, suspicion analysis, and reading subtle behavior cues.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
 
         <div class="tags">
+          <p class="skill-tag">Communication</p>
+          <p class="skill-tag">Deduction</p>
           <p class="skill-tag">Logic</p>
+        </div>
+      </div>
+
+      <!-- Apples to Apples -->
+      <div class="game Perspective show">
+        <div class="game-image">
+          <img src="images/Apples2.webp" alt="Apples to Apples Logo">
+        </div>
+        <strong>Apples to Apples</strong>
+        <p>A party card game where players match nouns to descriptive adjectives based on a judge's preferences.</p>
+          <div class="extra-content">
+            <p>Encourages perspective-taking, creative reasoning, and understanding subjective viewpoints.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Perspective</p>
+        </div>
+      </div>
+
+      <!-- Assasssin's Creed -->
+      <div class="game History show">
+        <div class="game-image">
+          <img src="images/AC.png" alt="Assasssin's Creed Logo">
+        </div>
+        <strong>Assasssin's Creed </strong>
+        <p>An open-world series set in immersive recreations of past civilizations.</p>
+          <div class="extra-content">
+            <p>Provides passive exposure to architecture, culture, and historical events.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">History</p>
+        </div>
+      </div>
+
+      <!-- Beat Saber -->
+      <div class="game Coordination Rhythm show">
+        <div class="game-image">
+          <img src="images/Beat-Saber.png" alt="Beat Saber Logo">
+        </div>
+        <strong>Beat Saber</strong>
+        <p>A VR rhythm game where players slash blocks to music.</p>
+          <div class="extra-content">
+            <p>Strengthens motor coordination, timing, and attention.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Coordination</p>
+          <p class="skill-tag">Rhythm</p>
+        </div>
+      </div>
+
+      <!-- Call of Duty: WWII  -->
+      <div class="game History show">
+        <div class="game-image">
+          <img src="images/Cod.png" alt="Call of Duty: WWII Logo">
+        </div>
+        <strong>Call of Duty: WWII </strong>
+        <p>A shooter game set during major WWII battles.</p>
+          <div class="extra-content">
+            <p>Develops tactical thinking and exposes players to historical settings.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">History</p>
+        </div>
+      </div>
+
+      <!-- Civilization VI -->
+      <div class="game Management Long-term Planning show">
+        <div class="game-image">
+          <img src="images/Civ.png" alt="Civilization VI Logo">
+        </div>
+        <strong>Civilization VI</strong>
+        <p>A turn-based strategy game about building a civilization across eras.</p>
+          <div class="extra-content">
+            <p>Strengthens long-term planning, resource management, and cause-effect reasoning.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Long-term Planning</p>
+          <p class="skill-tag">Management</p>
+        </div>
+      </div>
+
+      <!-- Codenames -->
+      <div class="game Creativity Communication show">
+        <div class="game-image">
+          <img src="images/Codenames.png" alt="Codenames Logo">
+        </div>
+        <strong>Codenames</strong>
+        <p>A word game where teams use clues to identify words in a grid.</p>
+          <div class="extra-content">
+            <p>Builds vocabulary flexibility, lateral thinking, and communication precision.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Creativity</p>
           <p class="skill-tag">Communication</p>
         </div>
-        <div class="overlay">
-    <div class="extra-content">
-    <p>In Monopoly, players also learn about budgeting, planning ahead, and adapting strategy when circumstances change — valuable lessons in resource management.</p>
-  </div>
-
-  </div>
-
       </div>
+
+
     </main>
   </div>
 
