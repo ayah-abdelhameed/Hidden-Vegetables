@@ -44,11 +44,14 @@
   <div class="horizontal-scroll">
     <div id="filterButtons">
       <button type="button" class="btn active" onclick="filterSelection('all')">Show all</button>
+      <button type="button" class="btn" onclick="filterSelection('Communication')">Communication</button>
       <button type="button" class="btn" onclick="filterSelection('Critical-Thinking')">Critical Thinking</button>
+      <button type="button" class="btn" onclick="filterSelection('Creativity')">Creativity</button>
       <button type="button" class="btn" onclick="filterSelection('Decision-Making')">Decision Making</button>
       <button type="button" class="btn" onclick="filterSelection('Deduction')">Deduction</button>
       <button type="button" class="btn" onclick="filterSelection('Economics')">Economics</button>
       <button type="button" class="btn" onclick="filterSelection('Math')">Math</button>
+      <button type="button" class="btn" onclick="filterSelection('Management')">Management</button>
       <button type="button" class="btn" onclick="filterSelection('Motor-Skills')">Motor Skills</button>
       <button type="button" class="btn" onclick="filterSelection('Negotiation')">Negotiation</button>
       <button type="button" class="btn" onclick="filterSelection('Perspective')">Perspective</button>
@@ -62,6 +65,8 @@
     <aside class="sidebar">
       <h2>Contents</h2>
       <ul>
+        <li><a href="#">Animal Crossing</a></li>
+        <li><a href="#">Among Us</a></li>
         <li><a href="#">Chess</a></li>
         <li><a href="#">Dungeons &amp; Dragons</a></li>
         <li><a href="#">Hide &amp; Seek</a></li>
@@ -156,7 +161,7 @@
 
       </div>
 
-      <div class="game Problem-Solving Probability show">
+      <div class="game Problem-Solving Creativity Probability show">
         <div class="game-image">
           <img src="images/DnD.png" alt="Dungeons & Dragons Icon">
         </div>
@@ -164,13 +169,32 @@
         <p>A tabletop role-playing game where players create characters and work together to overcome challenges in a shared fantasy story.</p>
           <div class="extra-content">
     <p>Players use probability and teamwork to make tactical decisions, solve problems, and coordinate group strategies.</p>
+          </div>
+            <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Creativity</p>
+          <p class="skill-tag">Problem-Solving</p>
+          <p class="skill-tag">Probability</p>
+        </div>
+        <div class="overlay">
+          </div>
+  </div>
+
+      <div class="game Management show">
+        <div class="game-image">
+          <img src="images/Animal-Crossing.png" alt="Animal Crossing Icon">
+        </div>
+        <strong>Animal Crossing</strong>
+        <p>A peaceful village-life game where you interact with animal neighbors and customize your home and island.</p>
+          <div class="extra-content">
+    <p>Teaches patience, budgeting, habit formation, and empathy through relationship-building and long-term planning.</p>
   </div>
 
   <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
 
         <div class="tags">
-          <p class="skill-tag">Problem-Solving</p>
-          <p class="skill-tag">Probability</p>
+          <p class="skill-tag">Management</p>
         </div>
         <div class="overlay">
 </div>
@@ -197,7 +221,7 @@
 
       </div>
 
-      <div class="game Deduction Critical-Thinking show">
+      <div class="game Deduction Creativity Critical-Thinking show">
         <div class="game-image">
           <img src="images/Mafia.svg" alt="Mafia Icon">
         </div>
@@ -217,7 +241,8 @@
 </div>
 
       </div>
-      <div class="game Resource-Management show">
+
+      <div class="game Management show">
         <div class="game-image">
           <img src="images/Minecraft.png" alt="Minecraft Icon">
         </div>
@@ -230,7 +255,8 @@
   <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
 
         <div class="tags">
-          <p class="skill-tag">Resource Management</p>
+          <p class="skill-tag">Management</p>
+          <p class="skill-tag">Creativity</p>
         </div>
         <div class="overlay">
 </div>
@@ -250,6 +276,29 @@
 
         <div class="tags">
           <p class="skill-tag">Decision Making</p>
+        </div>
+        <div class="overlay">
+    <div class="extra-content">
+    <p>In Monopoly, players also learn about budgeting, planning ahead, and adapting strategy when circumstances change — valuable lessons in resource management.</p>
+  </div>
+
+  </div>
+
+      </div>
+      <div class="game Logic Communication show">
+        <div class="game-image">
+          <img src="images/Among-Us.png" alt="Among Us Logo">
+        </div>
+        <strong>Among Us</strong>
+        <p>A multiplayer social deduction game where crewmates must identify the hidden impostor.</p>
+          <div class="extra-content">
+    <p>Builds reasoning, communication, suspicion analysis, and reading subtle behavior cues.</p>
+  </div>
+      <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Logic</p>
+          <p class="skill-tag">Communication</p>
         </div>
         <div class="overlay">
     <div class="extra-content">
@@ -336,8 +385,6 @@ searchBar.addEventListener('keyup', function () {
 
 
   </script>
-  <!-- <footer>
-    <p>footer content</p>
-  </footer> -->
+
 </body>
 </html>
