@@ -89,7 +89,7 @@ h1{
   position: relative;
   width: 100%;
   height: 22rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   overflow: hidden;
 }
 
@@ -113,13 +113,13 @@ h1{
 .explanation{
   position: absolute;  
   font-size: 1.25rem;
-  line-height: 1.75rem;      
+  line-height: 1.85rem;      
   z-index: 2;                
   color: white;             
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 60%;
   text-align: center;
 }
 
@@ -222,7 +222,7 @@ input[type=text] {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0 0 1.5rem 1.5rem;
   align-items: start;
 }
@@ -263,13 +263,13 @@ input[type=text] {
 
 
 .game p {
-  margin: 0.5rem;
-  font-size: 0.85rem;
+  margin: 0.3rem;
+  font-size: 0.8rem;
   color: #333;
 }
 
 strong{
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-family: "p22-fllw-eaglefeather", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -298,15 +298,17 @@ li{
   color: white !important;
   border-radius: 30px;
   padding: .4rem .75rem;
+  white-space: nowrap;
 }
 
 p.skill-tag{
-  font-size: .75rem;
+  font-size: .65rem;
 }
 
 .tags{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .show {

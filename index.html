@@ -26,13 +26,13 @@
           <a href="#" onclick="filterSelection('Coordination')">Coordination</a>
           <a href="#" onclick="filterSelection('Economics')">Economics</a>
           <a href="#" onclick="filterSelection('History')">History</a>
-          <a href="#" onclick="filterSelection('Long-term-Planning')">Long-term Planning</a>
           <a href="#" onclick="filterSelection('Management')">Management</a>
           <a href="#" onclick="filterSelection('Math')">Math</a>
           <a href="#" onclick="filterSelection('Negotiation')">Negotiation</a>
           <a href="#" onclick="filterSelection('Perspective')">Perspective</a>
+          <a href="#" onclick="filterSelection('Planning')">Planning</a>
           <a href="#" onclick="filterSelection('Probability')">Probability</a>
-          <a href="#" onclick="filterSelection('Problem-Solving')">Problem-Solving</a>
+          <a href="#" onclick="filterSelection('Problem-solving')">Problem-solving</a>
           <a href="#" onclick="filterSelection('Rhythm')">Rhythm</a>
           <a href="#" onclick="filterSelection('Strategy')">Strategy</a>
         </div>
@@ -43,8 +43,8 @@
 
   <section class="banner-img">
     <div class="overlay"></div>
-    <img  src="images/224993.jpg" alt="Students learning with games">
-    <p class="explanation">The games your child already loves to play can actually help them develop important skills, often without them even realizing it! Just like  vegetables hidden in their favorite meal to make it healthy while still enjoyable, Hidden Vegetables shows you the learning that is hidden in games kids already enjoy. Click through the games below to discover the skills your child can build while having fun!</p>
+    <img  src="images/Kids-learning.webp" alt="Students learning with games">
+    <p class="explanation">The games kids already love to play can actually help them develop important skills, often without them even realizing it! Just like  vegetables hidden in their favorite meal to make it healthy while still enjoyable, Hidden Vegetables shows you the learning that is hidden in games kids already enjoy. Click through the games below to discover which skills kids can build while having fun!</p>
   </section>
   <div class="horizontal-scroll">
     <div id="filterButtons">
@@ -57,13 +57,14 @@
       <button type="button" class="btn" onclick="filterSelection('Coordination')">Coordination</button>
       <button type="button" class="btn" onclick="filterSelection('Economics')">Economics</button>
       <button type="button" class="btn" onclick="filterSelection('History')">History</button>
-      <button type="button" class="btn" onclick="filterSelection('Long-term-Planning')">Long-term Planning</button>
       <button type="button" class="btn" onclick="filterSelection('Management')">Management</button>
       <button type="button" class="btn" onclick="filterSelection('Math')">Math</button>
       <button type="button" class="btn" onclick="filterSelection('Negotiation')">Negotiation</button>
+      <button type="button" class="btn" onclick="filterSelection('Pattern Recognition')">Pattern Recognition</button>
       <button type="button" class="btn" onclick="filterSelection('Perspective')">Perspective</button>
+      <button type="button" class="btn" onclick="filterSelection('Planning')">Planning</button>
       <button type="button" class="btn" onclick="filterSelection('Probability')">Probability</button>
-      <button type="button" class="btn" onclick="filterSelection('Problem-Solving')">Problem-Solving</button>
+      <button type="button" class="btn" onclick="filterSelection('Problem-solving')">Problem-solving</button>
       <button type="button" class="btn" onclick="filterSelection('Rhythm')">Rhythm</button>
       <button type="button" class="btn" onclick="filterSelection('Strategy')">Strategy</button>
     </div>
@@ -81,6 +82,9 @@
         <li><a href="#">Call of Duty: WWII </a></li>
         <li><a href="#">Chess</a></li>
         <li><a href="#">Civilization VI</a></li>
+        <li><a href="#">Codenames</a></li>
+        <li><a href="#">Connect Four</a></li>
+        <li><a href="#">Don't Starve</a></li>
         <li><a href="#">Dungeons &amp; Dragons</a></li>
         <li><a href="#">Hide &amp; Seek</a></li>
         <li><a href="#">Mafia</a></li>
@@ -93,209 +97,6 @@
     </aside>
 
     <main class="game-grid">
-      <!-- Monopoly -->
-      <div class="game Math Economics show">
-        <div class="game-image">
-          <img src="images/Monopoly.png" alt="Monopoly Icon">
-        </div>
-        <strong>Monopoly</strong>
-        <p>A board game where players buy, trade, and develop properties to accumulate wealth and bankrupt opponents.</p>
-        <div class="extra-content">
-          <p>Players practice arithmetic, budgeting, and negotiation by managing money, making deals, and planning investments strategically.</p>
-        </div>
-
-        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Math</p>
-          <p class="skill-tag">Economics</p>
-        </div>
-      </div>
-
-      <!-- Catan -->
-      <div class="game Negotiation Probability show">
-        <div class="game-image">
-          <img src="images/Catan.webp" alt="Settlers of Catan Icon">
-        </div>
-        <strong>Settlers of Catan</strong>
-        <p>A board game where players gather and trade resources to build settlements and roads while competing for dominance.</p>
-          <div class="extra-content">
-    <p>Numbers on resource plots teach probability and chance, while managing scarce resources encourages strategic planning and negotiation.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Negotiation</p>
-          <p class="skill-tag">Probability</p>
-        </div>
-
-      </div>
-
-      <!-- Tag -->
-      <div class="game Strategy Coordination show">
-        <div class="game-image">
-          <img src="images/Tag.png" alt="Tag Icon">
-        </div>
-        <strong>Tag</strong>
-        <p>A chasing game where one player tries to tag others, who must dodge and run to stay safe.</p>
-          <div class="extra-content">
-    <p>Players develop spatial awareness, anticipation, and split-second decision-making as they move, react, and plan routes.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Strategy</p>
-          <p class="skill-tag">Coordination</p>
-        </div>
-
-
-      </div>
-
-      <!-- Hide n Seek -->
-      <div class="game Perspective Coordination show">
-        <div class="game-image">
-          <img src="images/Hide.png" alt="Hide & Seek Icon">
-        </div>
-        <strong>Hide &amp; Seek</strong>
-        <p>One player searches while others hide, using the environment to remain unseen.</p>
-          <div class="extra-content">
-    <p>Players build observation, prediction, and spatial memory by imagining others' viewpoints and reasoning about likely hiding spots.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Perspective</p>
-          <p class="skill-tag">Coordination</p>
-        </div>
-
-
-      </div>
-
-      <!-- DnD -->
-      <div class="game Problem-Solving Creativity Probability show">
-        <div class="game-image">
-          <img src="images/DnD.png" alt="Dungeons & Dragons Icon">
-        </div>
-        <strong>Dungeons &amp; Dragons</strong>
-        <p>A tabletop role-playing game where players create characters and work together to overcome challenges in a shared fantasy story.</p>
-          <div class="extra-content">
-    <p>Players use probability and teamwork to make tactical decisions, solve problems, and coordinate group strategies.</p>
-          </div>
-            <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Creativity</p>
-          <p class="skill-tag">Problem-Solving</p>
-          <p class="skill-tag">Probability</p>
-        </div>
-
-      </div>
-
-      <!-- Animal Crossing -->
-      <div class="game Management Long-term Planning show">
-        <div class="game-image">
-          <img src="images/Animal-Crossing.png" alt="Animal Crossing Icon">
-        </div>
-        <strong>Animal Crossing</strong>
-        <p>A peaceful village-life game where you interact with animal neighbors and customize your home and island.</p>
-          <div class="extra-content">
-    <p>Teaches patience, budgeting, habit formation, and empathy through relationship-building and long-term planning.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Management</p>
-          <p class="skill-tag">Long-term Planning</p>
-        </div>
-
-
-      </div>
-
-      <!-- Chess -->
-      <div class="game Strategy Long-term Planning show">
-        <div class="game-image">
-          <img src="images/Chess.png" alt="Chess Icon">
-        </div>
-        <strong>Chess</strong>
-        <p>A two-player strategy game where each side maneuvers pieces to checkmate the opponent's king.</p>
-          <div class="extra-content">
-    <p>Players strengthen pattern recognition, foresight, and strategic reasoning by predicting moves and planning several turns ahead.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Strategy</p>
-          <p class="skill-tag">Long-term Planning</p>
-        </div>
-
-
-      </div>
-
-      <!-- Mafia -->
-      <div class="game Deduction Creativity Critical-Thinking show">
-        <div class="game-image">
-          <img src="images/Mafia.svg" alt="Mafia Icon">
-        </div>
-        <strong>Mafia</strong>
-        <p>A multiplayer game where players are assigned secret roles and must work together or against each other to achieve their objectives, using discussion, deception, and deduction.</p>
-          <div class="extra-content">
-    <p>Players enhance general cognitive skills such as reasoning, problem-solving, decision-making, and communication by evaluating information, interpreting behavior, and making strategic choices under uncertainty.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Critical Thinking</p>
-          <p class="skill-tag">Deduction</p>
-        </div>
-
-
-      </div>
-
-      <!-- Minecraft -->
-      <div class="game Management show">
-        <div class="game-image">
-          <img src="images/Minecraft.png" alt="Minecraft Icon">
-        </div>
-        <strong>Minecraft</strong>
-        <p>A sandbox video game where players build, explore, and survive using block-based materials in a 3D world.</p>
-          <div class="extra-content">
-    <p>Constructing structures fosters spatial reasoning and geometry skills, while collecting and crafting teach efficiency and resource prioritization.</p>
-  </div>
-
-  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Management</p>
-          <p class="skill-tag">Creativity</p>
-        </div>
-
-
-      </div>
-
-      <!-- The sims -->
-      <div class="game Decision-Making show">
-        <div class="game-image">
-          <img src="images/Sims.png" alt="The Sims Icon">
-        </div>
-        <strong>The Sims</strong>
-        <p>A life simulation game where players design homes, manage characters' lives, and balance their needs and ambitions.</p>
-          <div class="extra-content">
-    <p>Players practice budgeting, planning, and understanding cause-and-effect through managing relationships, time, and resources.</p>
-  </div>
-      <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
-
-        <div class="tags">
-          <p class="skill-tag">Decision Making</p>
-        </div>
-
-      </div>
-
       <!-- Among Us -->
       <div class="game Logic Communication Deduction">
         <div class="game-image">
@@ -314,6 +115,27 @@
           <p class="skill-tag">Deduction</p>
           <p class="skill-tag">Logic</p>
         </div>
+      </div>
+
+      <!-- Animal Crossing -->
+      <div class="game Management Planning show">
+        <div class="game-image">
+          <img src="images/Animal-Crossing.png" alt="Animal Crossing Icon">
+        </div>
+        <strong>Animal Crossing</strong>
+        <p>A peaceful village-life game where you interact with animal neighbors and customize your home and island.</p>
+          <div class="extra-content">
+    <p>Teaches patience, budgeting, habit formation, and empathy through relationship-building and long-term planning.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Management</p>
+          <p class="skill-tag">Planning</p>
+        </div>
+
+
       </div>
 
       <!-- Apples to Apples -->
@@ -389,8 +211,29 @@
         </div>
       </div>
 
+      <!-- Chess -->
+      <div class="game Strategy Planning show">
+        <div class="game-image">
+          <img src="images/Chess.png" alt="Chess Icon">
+        </div>
+        <strong>Chess</strong>
+        <p>A two-player strategy game where each side maneuvers pieces to checkmate the opponent's king.</p>
+          <div class="extra-content">
+    <p>Players strengthen pattern recognition, foresight, and strategic reasoning by predicting moves and planning several turns ahead.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Strategy</p>
+          <p class="skill-tag">Planning</p>
+        </div>
+
+
+      </div>
+
       <!-- Civilization VI -->
-      <div class="game Management Long-term Planning show">
+      <div class="game Management Planning show">
         <div class="game-image">
           <img src="images/Civ.png" alt="Civilization VI Logo">
         </div>
@@ -403,28 +246,208 @@
         <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
 
         <div class="tags">
-          <p class="skill-tag">Long-term Planning</p>
+          <p class="skill-tag">Planning</p>
           <p class="skill-tag">Management</p>
         </div>
       </div>
 
-      <!-- Codenames -->
-      <div class="game Creativity Communication show">
+      <!-- Connect Four -->
+      <div class="game Pattern Recognition Strategy show">
         <div class="game-image">
-          <img src="images/Codenames.png" alt="Codenames Logo">
+          <img src="images/Connect4.png" alt="Connect Four Logo">
         </div>
-        <strong>Codenames</strong>
-        <p>A word game where teams use clues to identify words in a grid.</p>
+        <strong>Connect Four</strong>
+        <p>A two-player game where players try to align four disks in a row.</p>
           <div class="extra-content">
-            <p>Builds vocabulary flexibility, lateral thinking, and communication precision.</p>
+            <p>Reinforces simple strategic thinking and anticipating opponents' moves.</p>
           </div>
 
         <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
 
         <div class="tags">
-          <p class="skill-tag">Creativity</p>
-          <p class="skill-tag">Communication</p>
+          <p class="skill-tag">Pattern Recognition</p>
+          <p class="skill-tag">Strategy</p>
         </div>
+      </div>
+
+      <!-- Don't Starve -->
+      <div class="game Planning Management show">
+        <div class="game-image">
+          <img src="images/Dont-Starve.webp" alt="Don't Starve Logo">
+        </div>
+        <strong>Don't Starve</strong>
+        <p>A survival crafting game in a harsh wilderness.</p>
+          <div class="extra-content">
+            <p>Encourages planning, environmental literacy, and resource prioritization.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Planning</p>
+          <p class="skill-tag">Management</p>
+        </div>
+      </div>
+
+      <!-- DnD -->
+      <div class="game Problem-solving Creativity Probability show">
+        <div class="game-image">
+          <img src="images/DnD.png" alt="Dungeons & Dragons Icon">
+        </div>
+        <strong>Dungeons &amp; Dragons</strong>
+        <p>A tabletop role-playing game where players create characters and work together to overcome challenges in a shared fantasy story.</p>
+          <div class="extra-content">
+    <p>Players use probability and teamwork to make tactical decisions, solve problems, and coordinate group strategies.</p>
+          </div>
+            <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Creativity</p>
+          <p class="skill-tag">Problem-solving</p>
+          <p class="skill-tag">Probability</p>
+        </div>
+
+      </div>
+
+      <!-- Hide n Seek -->
+      <div class="game Perspective Coordination show">
+        <div class="game-image">
+          <img src="images/Hide.png" alt="Hide & Seek Icon">
+        </div>
+        <strong>Hide &amp; Seek</strong>
+        <p>One player searches while others hide, using the environment to remain unseen.</p>
+          <div class="extra-content">
+    <p>Players build observation, prediction, and spatial memory by imagining others' viewpoints and reasoning about likely hiding spots.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Perspective</p>
+          <p class="skill-tag">Coordination</p>
+        </div>
+
+
+      </div>
+
+      <!-- Mafia -->
+      <div class="game Deduction Creativity Critical-Thinking show">
+        <div class="game-image">
+          <img src="images/Mafia.svg" alt="Mafia Icon">
+        </div>
+        <strong>Mafia</strong>
+        <p>A multiplayer game where players are assigned secret roles and must work together or against each other to achieve their objectives, using discussion, deception, and deduction.</p>
+          <div class="extra-content">
+            <p>Players enhance general cognitive skills such as reasoning, problem-solving, decision-making, and communication by evaluating information, interpreting behavior, and making strategic choices under uncertainty.</p>
+          </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Critical Thinking</p>
+          <p class="skill-tag">Deduction</p>
+        </div>
+
+
+      </div>
+
+      <!-- Minecraft -->
+      <div class="game Management show">
+        <div class="game-image">
+          <img src="images/Minecraft.png" alt="Minecraft Icon">
+        </div>
+        <strong>Minecraft</strong>
+        <p>A sandbox video game where players build, explore, and survive using block-based materials in a 3D world.</p>
+          <div class="extra-content">
+    <p>Constructing structures fosters spatial reasoning and geometry skills, while collecting and crafting teach efficiency and resource prioritization.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Management</p>
+          <p class="skill-tag">Creativity</p>
+        </div>
+
+
+      </div>
+
+      <!-- Monopoly -->
+      <div class="game Math Economics show">
+        <div class="game-image">
+          <img src="images/Monopoly.png" alt="Monopoly Icon">
+        </div>
+        <strong>Monopoly</strong>
+        <p>A board game where players buy, trade, and develop properties to accumulate wealth and bankrupt opponents.</p>
+        <div class="extra-content">
+          <p>Players practice arithmetic, budgeting, and negotiation by managing money, making deals, and planning investments strategically.</p>
+        </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Math</p>
+          <p class="skill-tag">Economics</p>
+        </div>
+      </div>
+
+      <!-- Catan -->
+      <div class="game Negotiation Probability show">
+        <div class="game-image">
+          <img src="images/Catan.webp" alt="Settlers of Catan Icon">
+        </div>
+        <strong>Settlers of Catan</strong>
+        <p>A board game where players gather and trade resources to build settlements and roads while competing for dominance.</p>
+          <div class="extra-content">
+            <p>Numbers on resource plots teach probability and chance, while managing scarce resources encourages strategic planning and negotiation.</p>
+          </div>
+
+        <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Negotiation</p>
+          <p class="skill-tag">Probability</p>
+        </div>
+
+      </div>
+
+      <!-- The sims -->
+      <div class="game Decision-Making show">
+        <div class="game-image">
+          <img src="images/Sims.png" alt="The Sims Icon">
+        </div>
+        <strong>The Sims</strong>
+        <p>A life simulation game where players design homes, manage characters' lives, and balance their needs and ambitions.</p>
+          <div class="extra-content">
+    <p>Players practice budgeting, planning, and understanding cause-and-effect through managing relationships, time, and resources.</p>
+  </div>
+      <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Decision Making</p>
+        </div>
+
+      </div>
+
+      <!-- Tag -->
+      <div class="game Strategy Coordination show">
+        <div class="game-image">
+          <img src="images/Tag.png" alt="Tag Icon">
+        </div>
+        <strong>Tag</strong>
+        <p>A chasing game where one player tries to tag others, who must dodge and run to stay safe.</p>
+          <div class="extra-content">
+    <p>Players develop spatial awareness, anticipation, and split-second decision-making as they move, react, and plan routes.</p>
+  </div>
+
+  <button type="button" class="learn-more-btn" onclick="toggleExtra(this)">Learn more</button>
+
+        <div class="tags">
+          <p class="skill-tag">Strategy</p>
+          <p class="skill-tag">Coordination</p>
+        </div>
+
+
       </div>
 
 
